@@ -12,7 +12,7 @@ pip install -r requirements_deployment.txt
 To start the live demo, run:
 
 ```bash
-python visualiser.py --tokens model/tokens.txt --decoder model/decoder-epoch-17-avg-6-chunk-8-left-128.onnx --encoder model/encoder-epoch-17-avg-6-chunk-8-left-128.onnx --joiner /model/joiner-epoch-17-avg-6-chunk-8-left-128.onnx
+python visualiser.py --tokens model/tokens.txt --decoder model/decoder-epoch-17-avg-6-chunk-8-left-128.onnx --encoder model/encoder-epoch-17-avg-6-chunk-8-left-128.onnx --joiner model/joiner-epoch-17-avg-6-chunk-8-left-128.onnx
 ```
 
 # Training the model
@@ -71,7 +71,7 @@ python ./zipformer_mod/train.py \
     --tensorboard False \
     --max-duration 400 \
     --use-cr-ctc 0 \
-    --use-ctc 0 \ 
+    --use-ctc 0 \
     --use-transducer 1 \
     --use-attention-decoder 0 \
     --num-encoder-layers 2,2,2,2,2 \
@@ -103,7 +103,7 @@ python ./zipformer_mod/train.py \
     --tensorboard False \
     --max-duration 400 \
     --use-cr-ctc 0 \
-    --use-ctc 0 \ 
+    --use-ctc 0 \
     --use-transducer 1 \
     --use-attention-decoder 0 \
     --num-encoder-layers 2,2,2,2,2 \
