@@ -1,0 +1,11 @@
+mido
+sentencepiece
+numpy
+kaldilm
+kaldialign
+tensorboard
+kaldifst
+kaldilm
+protobuf==3.20.3
+lhotse
+pypinyin==0.50.0
